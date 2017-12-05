@@ -29,7 +29,7 @@ public class AppConfig {
     /**
      * IAC web API token
      */
-    public static final String API_TOKEN = "d4e9a9414181819f3a47ff1ddd9b2ca3";
+    public static final String API_TOKEN = "8025b2993ad6f9d5e1bba4bd5e36f7e6";
 
     /**
      * IAC web API date format for headers

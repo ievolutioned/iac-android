@@ -22,6 +22,7 @@ crashlytics.properties
 *.png~
 build/*
 IAC/build/*
+Auria/build/*
 PXForm/build/*
 .gradle/*
 .idea/workspace.xml

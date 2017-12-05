@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Dec 04 22:55:10 CST 2017
+#Mon Dec 04 23:21:48 CST 2017
 1.base=C\:\\Users\\Daniel\\Documents\\iEvolutioned\\workspace\\iac-android\\Auria\\build\\intermediates\\assets\\debug
 2.path=crashlytics-build.properties
 0.baseType=DIRECTORY

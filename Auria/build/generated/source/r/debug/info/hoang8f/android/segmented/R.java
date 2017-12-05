@@ -14,8 +14,8 @@ public final class R {
         public static final int sc_tint_color = 0x7f0300b4;
     }
     public static final class color {
-        public static final int radio_button_selected_color = 0x7f05004a;
-        public static final int radio_button_unselected_color = 0x7f05004b;
+        public static final int radio_button_selected_color = 0x7f05004c;
+        public static final int radio_button_unselected_color = 0x7f05004d;
     }
     public static final class dimen {
         public static final int radio_button_conner_radius = 0x7f06006d;

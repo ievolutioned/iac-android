@@ -25,7 +25,7 @@ public abstract class ServiceBase {
      * Domains
      **/
     private static final String DOMAIN = "herokuapp.com/";
-    private static final String SUBDOMAIN = AppConfig.DEBUG ? "auria-group-stage." : "iacgroup.";
+    private static final String SUBDOMAIN = AppConfig.DEBUG ? "auria." : "auria.";
 
     /**
      * URL prefixes

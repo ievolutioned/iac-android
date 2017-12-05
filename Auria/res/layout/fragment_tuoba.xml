@@ -21,7 +21,7 @@
         android:layout_centerHorizontal="true"
         android:layout_margin="15dp"
         android:text="@string/string_fragment_tuoba_title"
-        android:textColor="@color/primary_blue"
+        android:textColor="@color/primary"
         android:textSize="20sp" />
 
     <TextView
@@ -52,7 +52,7 @@
         android:paddingLeft="50dp"
         android:paddingRight="50dp"
         android:paddingStart="50dp"
-        android:textColor="@color/primary_blue"
+        android:textColor="@color/primary"
         android:visibility="invisible" />
 
     <Button
