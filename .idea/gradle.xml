@@ -9,7 +9,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/IAC" />
+            <option value="$PROJECT_DIR$/Auria" />
             <option value="$PROJECT_DIR$/PXForm" />
           </set>
         </option>

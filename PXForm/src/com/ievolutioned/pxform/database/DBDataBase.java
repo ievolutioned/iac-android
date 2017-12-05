@@ -217,7 +217,7 @@ public abstract class DBDataBase <T extends DBTableBase> extends SQLiteAssetHelp
     ///========================================================
 
     @SuppressLint("SdCardPath")
-    private static String DB_FILEPATH = "/data/data/com.ievolutioned.iac/databases/" + DATABASE_NAME;
+    private static String DB_FILEPATH = "/data/data/com.ievolutioned.auria/databases/" + DATABASE_NAME;
 
     /**
      * Copies the database file at the specified location over the current
@@ -236,7 +236,7 @@ public abstract class DBDataBase <T extends DBTableBase> extends SQLiteAssetHelp
         // Close the SQLiteOpenHelper so it will commit the created empty
         // database to internal storage.
         close();
-        File oldDb = new File("/storage/sdcard0/com.ievolutioned.iac.db");
+        File oldDb = new File("/storage/sdcard0/com.ievolutioned.auria.db");
         File newDb = new File(DB_FILEPATH);
         if (newDb.exists()) {
             FileUtils ffb = new FileUtils();
