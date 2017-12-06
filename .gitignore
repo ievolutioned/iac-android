@@ -23,6 +23,7 @@ crashlytics.properties
 build/*
 IAC/build/*
 Auria/build/*
+AURIA/build/*
 PXForm/build/*
 .gradle/*
 .idea/workspace.xml
@@ -32,3 +33,5 @@ PXForm/build/*
 .idea/misc.xml
 .idea/libraries/*
 PXForm/assets/databases/*.db-journal
+Auria/res/values-v11/
+Auria/res/values-v14/

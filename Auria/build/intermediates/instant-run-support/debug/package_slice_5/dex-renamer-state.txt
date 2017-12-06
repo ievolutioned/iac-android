@@ -1,4 +1,4 @@
-#Mon Dec 04 22:55:28 CST 2017
+#Tue Dec 05 18:14:41 CST 2017
 base.0=C\:\\Users\\Daniel\\Documents\\iEvolutioned\\workspace\\iac-android\\Auria\\build\\intermediates\\transforms\\dexMerger\\debug\\5
 path.0=classes.dex
 renamed.0=classes.dex

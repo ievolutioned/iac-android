@@ -32,13 +32,13 @@
         <item>@string/string_site_organization_chart</item>
     </string-array>
     <string-array name="sites_item_values">
-        <item>https://iacgroup.herokuapp.com/admin</item>
-        <item>https://iacgroup.herokuapp.com/admin/asks</item>
-        <item>https://iacgroup.herokuapp.com/admin/procedures</item>
-        <item>https://iacgroup.herokuapp.com/admin/comment</item>
-        <item>https://iacgroup.herokuapp.com/admin/head_count</item>
-        <item>https://iacgroup.herokuapp.com/admin/videoteca</item>
-        <item>https://iacgroup.herokuapp.com/admin/organization_charts</item>
+        <item>https://auria.herokuapp.com/admin</item>
+        <item>https://auria.herokuapp.com/admin/asks</item>
+        <item>https://auria.herokuapp.com/admin/procedures</item>
+        <item>https://auria.herokuapp.com/admin/comment</item>
+        <item>https://auria.herokuapp.com/admin/head_count</item>
+        <item>https://auria.herokuapp.com/admin/videoteca</item>
+        <item>https://auria.herokuapp.com/admin/organization_charts</item>
     </string-array>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
@@ -94,8 +94,8 @@
     <color name="notification_action_color_filter">#ffffffff</color>
     <color name="notification_icon_bg_color">#ff9e9e9e</color>
     <color name="notification_material_background_media_default_color">#ff424242</color>
-    <color name="primary">#014472</color>
-    <color name="primary_dark">#013372</color>
+    <color name="primary">#015572</color>
+    <color name="primary_dark">#014472</color>
     <color name="primary_dark_material_dark">@android:color/black</color>
     <color name="primary_dark_material_light">@color/material_grey_600</color>
     <color name="primary_gray">#AEAFB4</color>
@@ -522,7 +522,7 @@
     <string name="activity_login_title">CUENTA</string>
     <string name="app_name">Auria</string>
     <string name="app_version">1.0</string>
-    <string name="com.crashlytics.android.build_id" ns2:ignore="UnusedResources,TypographyDashes" translatable="false">dd0c7a4f-5bb8-48b9-a8a5-8a3c57cfeabf</string>
+    <string name="com.crashlytics.android.build_id" ns2:ignore="UnusedResources,TypographyDashes" translatable="false">6bfa49c4-9d6d-4791-a6ac-4cd7373941a8</string>
     <string name="custom_barcode_scanner_cancel">Cancelar Escaneo</string>
     <string name="custom_barcode_scanner_torch">Linterna</string>
     <string name="default_content_description">Auria</string>
@@ -687,7 +687,7 @@
     <string name="string_fragment_update_title">Nueva actualización disponible</string>
     <string name="string_site_asks">Preguntas Frecuentes</string>
     <string name="string_site_contact">Contacto</string>
-    <string name="string_site_head">Head count IAC México</string>
+    <string name="string_site_head">Head count Auria</string>
     <string name="string_site_home">Inicio</string>
     <string name="string_site_organization_chart">Organigrama</string>
     <string name="string_site_ppf">Políticas, Procedimientos y Formatos</string>
