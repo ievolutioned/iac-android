@@ -2,12 +2,14 @@ package com.ievolutioned.auria;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -193,6 +195,21 @@ public class LoginActivity extends Activity {
         LoginService loginService = new LoginService(AppConfig.getUUID(this));
         loginService.logIn(mEmail.getText().toString().trim(), mPassword.getText().toString().trim(),
                 login_handler);
+
+        hideKeyboard();
+    }
+
+    /**
+     * Hide keyboard after login
+     */
+    private void hideKeyboard() {
+        View view = this.getCurrentFocus();
+        if(view != null){
+            view.clearFocus();
+            InputMethodManager manager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+            if(manager != null)
+                manager.hideSoftInputFromWindow(view.getWindowToken(), 0);
+        }
     }
 
     /**
