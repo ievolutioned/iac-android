@@ -19,7 +19,7 @@
     <string name="fragment_forms_uploaded">Formulario enviado!</string>
     <string name="fragment_forms_error_parse">Error al cargar formulario</string>
     <string name="fragment_forms_error_form">Error de formulario</string>
-    <string name="fragment_forms_error_iac_id">El IAC ID no es válido</string>
+    <string name="fragment_forms_error_iac_id">El ID no es válido</string>
     <string name="fragment_forms_error_required">Campo requerido: </string>
     <string name="fragment_forms_error_saving">Por el momento no se ha podido salvar</string>
     <string name="fragment_forms_error_send">Error al enviar fomulario!</string>
