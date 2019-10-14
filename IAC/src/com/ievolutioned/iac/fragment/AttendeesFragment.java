@@ -248,7 +248,7 @@ public class AttendeesFragment extends BaseFragmentClass {
      */
     private void addNewAttendee(final String iacId) {
         //Verify if it exists
-        if (iacId == null || isAttendeeInList(iacId))
+        if (iacId == null)
             return;
         //Search attendee by id
         final Context c = getActivity();
@@ -263,6 +263,11 @@ public class AttendeesFragment extends BaseFragmentClass {
                                     mAttendees = new JsonArray();
                                 JsonElement attendeeInfo = response.json.getAsJsonObject()
                                         .get("info_attendee");
+                                String attendeeId = attendeeInfo.getAsJsonObject().get("id").getAsString();
+                                if (isAttendeeInList(attendeeId)){
+                                    ViewUtility.showMessage(c, ViewUtility.MSG_DEFAULT, R.string.string_fragment_attendees_existing_record);
+                                    return;
+                                }
                                 if (attendeeInfo != null && !attendeeInfo.isJsonNull()) {
                                     //I prefer to add it at the last place, but the client says at first
                                     JsonArray newElementArray = new JsonArray();

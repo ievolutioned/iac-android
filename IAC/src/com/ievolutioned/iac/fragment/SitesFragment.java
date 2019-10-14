@@ -9,6 +9,7 @@ import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.DownloadListener;
 import android.webkit.ValueCallback;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
@@ -16,6 +17,10 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.FrameLayout;
 import android.widget.ProgressBar;
+import android.app.DownloadManager;
+import android.os.Environment;
+import android.content.Context;
+import android.widget.Toast;
 
 import com.ievolutioned.iac.MainActivity;
 import com.ievolutioned.iac.R;
@@ -68,12 +73,32 @@ public class SitesFragment extends BaseFragmentClass {
      */
     public static final int INPUT_FILE_REQUEST_CODE = 1104;
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_sites, container, false);
         bindUI(root);
         WebViewManager.INSTANCE.init(getContext());
         mWebView = WebViewManager.INSTANCE.getView();
+        mWebView.setDownloadListener(new DownloadListener() {
+
+            @Override
+            public void onDownloadStart(String url, String userAgent,
+                                        String contentDisposition, String mimetype,
+                                        long contentLength) {
+                DownloadManager.Request request = new DownloadManager.Request(
+                        Uri.parse(url));
+
+                request.allowScanningByMediaScanner();
+                request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED); //Notify client once download is completed!
+                request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, "payslip.pdf");
+                DownloadManager dm = (DownloadManager) getActivity().getSystemService(Context.DOWNLOAD_SERVICE);
+                dm.enqueue(request);
+                Toast.makeText(getActivity().getApplicationContext(), "Downloading File", //To notify the Client that the file is being downloaded
+                        Toast.LENGTH_LONG).show();
+
+            }
+        });
         FrameLayout frameLayout = (FrameLayout) root.findViewById(R.id.fragment_sites_frame);
         frameLayout.addView(mWebView);
         if (savedInstanceState != null) {
